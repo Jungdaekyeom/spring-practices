@@ -11,7 +11,7 @@ import com.douzone.container.videosystem.DigitalVideoDisc;
 public class DVDPlayerConfig {
 
 	@Bean
-	public Avengers avegers() {
+	public Avengers avengers() {
 		return new Avengers();
 	}
 
@@ -20,7 +20,7 @@ public class DVDPlayerConfig {
 	// 생성자 주입
 	// @Bean
 	public DVDPlayer dvdPlayer01() {
-		return new DVDPlayer(avegers());
+		return new DVDPlayer(avengers());
 	}
 
 	// 주입(Injection) 하기2
