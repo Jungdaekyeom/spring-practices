@@ -9,6 +9,7 @@
 	</parent>
 	<artifactId>fileupload</artifactId>
 	<packaging>war</packaging>
+	
 	<properties>
 		<org.springframework-version>4.3.4.RELEASE</org.springframework-version>
 	</properties>
@@ -27,35 +28,35 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
-		<!-- Spring web -->
-		<!-- -->
+		
+		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
-
-		<!-- common fileupload -->
+		
+		<!-- Common FileUpload -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
 			<version>1.2.1</version>
 		</dependency>
 
+		<!-- Common IO -->
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>1.4</version>
 		</dependency>
-
+				
 		<!-- jstl -->
 		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+		    <groupId>jstl</groupId>
+		    <artifactId>jstl</artifactId>
+		    <version>1.2</version>
 		</dependency>
-
+				
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -63,7 +64,6 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
-
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
@@ -87,6 +87,7 @@
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
 				<configuration>
 					<url>http://127.0.0.1:8088/manager/text</url>
 					<path>/fileupload</path>
@@ -95,5 +96,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>	
 </project>
